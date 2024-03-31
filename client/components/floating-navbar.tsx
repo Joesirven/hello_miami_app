@@ -10,7 +10,7 @@ const FloatingNavbar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex items-center justify-center rounded-full  border border-white/50 bg-[#14393D] p-1.5 backdrop-blur-md">
+      <div className="flex items-center justify-center rounded-full bg-[#14393D] p-1.5 backdrop-blur-md">
         <div className="boder flex items-stretch p-2">
           <Link
             href="#hero"
@@ -20,38 +20,38 @@ const FloatingNavbar = () => {
               backgroundPosition: "50%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "auto 22px",
-              paddingLeft: "38px",
-              paddingRight: "38px",
+              paddingLeft: "25px",
+              paddingRight: "25px",
             }}
-            className="cursor-pointer rounded-full bg-zinc-800 p-4 pb-4 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
+            className="cursor-pointer rounded-full bg-zinc-800 p-2 pb-2 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
           ></Link>
           <Link
             href="/auth/"
-            className="rounded-full p-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
           >
             Survey
           </Link>
           <Link
             href="/auth/"
-            className="rounded-full p-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
           >
             About
           </Link>
           <Link
             href="https://lu.ma/hello_miami"
-            className="rounded-full p-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
           >
             Calendar
           </Link>
           <Link
             href="/auth/"
-            className="rounded-full p-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
           >
             Join
           </Link>
           <Link
             href="/auth/login"
-            className="rounded-full bg-zinc-800 p-4 font-bold text-white transition-colors hover:bg-white hover:text-black"
+            className="rounded-full bg-zinc-800 p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
           >
             Login
           </Link>

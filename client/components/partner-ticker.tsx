@@ -4,28 +4,56 @@ import Image from "next/image";
 import React from "react";
 import Ticker from "framer-motion-ticker";
 import dynamic from "next/dynamic";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 const partners = [
-  "/citizenM.svg",
-  "/LULA.svg",
-  "/init.svg",
-  "/techstars.png",
-  "/moonlighter.png",
+  {
+    src: "/citizenM.svg",
+    alt: "citizenM",
+    width: 25,
+    height: 25,
+  },
+  {
+    src: "/LULA.svg",
+    alt: "LULA",
+    width: 100,
+    height: 25,
+  },
+  {
+    src: "/init.svg",
+    alt: "init",
+    width: 60,
+    height: 20,
+  },
+
+  {
+    src: "/moonlighter.png",
+    alt: "moonlighter",
+    width: 100,
+    height: 25,
+  },
+  {
+    src: "/techstars.png",
+    alt: "techstars",
+    width: 140,
+    height: 15,
+  },
 ];
 
 const PartnerTickerComponent: React.FC = () => {
   return (
-    <div className="fixed inset-x-0 bottom-10 z-10 mx-auto flex w-full justify-center">
-      <div className="space-x-4 overflow-hidden rounded-full bg-[#14393D] p-4">
+    <div className="z-20 mx-auto w-[800px] justify-center">
+      <div className="overflow-hidden rounded-full bg-[#14393D] p-4">
         <Ticker duration={20}>
           {partners.map((item, index) => (
             <Image
               key={index}
-              src={item}
-              alt={`Logo of ${item}`}
-              width={32}
-              height={32}
+              src={item.src}
+              alt={`Logo of ${item.alt}`}
+              width={item.width}
+              height={item.height}
               loading="eager"
+              className="px-3"
             />
           ))}
         </Ticker>
