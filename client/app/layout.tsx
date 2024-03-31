@@ -4,7 +4,6 @@ import "@styles/globals.css";
 import dynamic from "next/dynamic";
 import FloatingNavbar from "@/components/floating-navbar";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,10 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <FloatingNavbar />
-        {children}
-      </body>
+      <FloatingNavbar />
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
