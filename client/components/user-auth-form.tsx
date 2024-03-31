@@ -1,7 +1,7 @@
 "use client";
 
 import { Icons } from "@/components/icons";
-import * as utils from "@/lib/utils";
+import * as utils from "@/utils/utils";
 import { Button } from "@ui/button";
 import { Input } from "@ui/input";
 import { Label } from "@ui/label";
