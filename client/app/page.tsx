@@ -1,3 +1,4 @@
+import PartnerTicker from "@/components/partner-ticker";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -66,6 +67,8 @@ export default function HomePage() {
               </blockquote>
             </div>
           </div>
+          <div className="z-50"></div>
+          <PartnerTicker />
           <video
             autoPlay
             loop
