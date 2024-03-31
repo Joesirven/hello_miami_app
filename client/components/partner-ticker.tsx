@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { FC } from "react";
+import React from "react";
+import Ticker from "framer-motion-ticker";
 import dynamic from "next/dynamic";
 
 const partners = [
@@ -13,24 +13,32 @@ const partners = [
   "/moonlighter.png",
 ];
 
-import React from "react";
-import Ticker from "framer-motion-ticker";
-
-function PartnerTicker() {
+const PartnerTickerComponent: React.FC = () => {
   return (
-    <div className="container bottom-0 z-10  space-x-4 overflow-hidden rounded-full  bg-[#14393D] p-4">
-      <Ticker duration={20}>
-        {partners.map((item, index) => (
-          <Image
-            key={index}
-            src={item}
-            alt={`Logo of ${item}`}
-            width={32}
-            height={32}
-          />
-        ))}
-      </Ticker>
+    // The outer div is for positioning the ticker component
+    <div className="fixed inset-x-0 bottom-10 mx-auto flex w-full justify-center">
+      <div className="space-x-4 overflow-hidden rounded-full bg-[#14393D] p-4">
+        <Ticker duration={20}>
+          {partners.map((item, index) => (
+            <Image
+              key={index}
+              src={item}
+              alt={`Logo of ${item}`}
+              width={32}
+              height={32}
+              // Disable the lazy loading for images to ensure they load as they scroll into view in the ticker
+              loading="eager"
+            />
+          ))}
+        </Ticker>
+      </div>
     </div>
   );
-}
+};
+
+// Use dynamic import with ssr false since we're dealing with animations and want to hydrate this component on the client-side.
+const PartnerTicker = dynamic(() => Promise.resolve(PartnerTickerComponent), {
+  ssr: false,
+});
+
 export default PartnerTicker;
