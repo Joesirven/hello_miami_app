@@ -25,7 +25,6 @@ const PartnerTickerComponent: React.FC = () => {
               alt={`Logo of ${item}`}
               width={32}
               height={32}
-              // Disable the lazy loading for images to ensure they load as they scroll into view in the ticker
               loading="eager"
             />
           ))}

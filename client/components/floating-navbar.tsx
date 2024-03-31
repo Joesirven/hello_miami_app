@@ -5,7 +5,7 @@ import Link from "next/link";
 const FloatingNavbar = () => {
   return (
     <motion.div
-      className="z-100 fixed inset-x-0 bottom-0 hidden w-full items-center justify-center rounded-full p-7 sm:flex"
+      className="z-100 fixed inset-x-0 bottom-0 w-full items-center justify-center rounded-full p-7 sm:flex"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
