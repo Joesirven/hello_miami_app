@@ -1,19 +1,16 @@
 "use client";
 
-import * as React from "react"
-
-import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
-import { Button } from "@ui/button"
-import { Input } from "@ui/input"
-import { Label } from "@ui/label"
+import { Icons } from "@/components/icons";
+import * as utils from "@/lib/utils";
+import { Button } from "@ui/button";
+import { Input } from "@ui/input";
+import { Label } from "@ui/label";
+import * as React from "react";
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-
-
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -33,7 +30,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
   }
 
   return (
-    <div className={cn("grid gap-6", className)} {...props}>
+    <div className={utils.cn("grid gap-6", className)} {...props}>
       <form onSubmit={onSubmit}>
         <div className="grid gap-2">
           <div className="grid gap-1">
@@ -77,5 +74,5 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
         GitHub
       </Button>
     </div>
-  )
+  );
 }

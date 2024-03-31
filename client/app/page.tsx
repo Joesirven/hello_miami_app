@@ -40,8 +40,8 @@ export default function HomePage() {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M0
               0V440.712H58.2132V247.722C58.2132 233.38 60.2169 220.198 64.2243 208.175C68.4427
               195.942 74.2429 185.396 81.625 176.538C89.0071 167.679 97.6547 160.93 107.568
