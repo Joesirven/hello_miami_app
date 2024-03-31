@@ -15,8 +15,7 @@ const partners = [
 
 const PartnerTickerComponent: React.FC = () => {
   return (
-    // The outer div is for positioning the ticker component
-    <div className="fixed inset-x-0 bottom-10 mx-auto flex w-full justify-center">
+    <div className="fixed inset-x-0 bottom-10 z-10 mx-auto flex w-full justify-center">
       <div className="space-x-4 overflow-hidden rounded-full bg-[#14393D] p-4">
         <Ticker duration={20}>
           {partners.map((item, index) => (

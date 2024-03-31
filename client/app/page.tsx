@@ -74,7 +74,7 @@ export default function HomePage() {
             loop
             muted
             playsInline
-            className="absolute left-0 top-0 z-0 h-full w-full object-cover"
+            className="absolute left-0 top-0 h-full w-full object-cover"
             src="/background.mp4"
           />
         </div>
