@@ -1,3 +1,4 @@
+import GradientBackground from "@/components/gradient-background";
 import PartnerTicker from "@/components/partner-ticker";
 import { Metadata } from "next";
 
@@ -22,7 +23,9 @@ export default function HomePage() {
           <PartnerTicker />
         </div>
       </div>
-      <div className="h-[calc(2500px-100vh)] overflow-y-auto"></div>
+      <div className="h-[calc(2500px-100vh)] overflow-y-auto">
+        <GradientBackground />
+      </div>
     </>
   );
 }

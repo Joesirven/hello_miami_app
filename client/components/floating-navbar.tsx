@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
@@ -10,34 +11,39 @@ const FloatingNavbar = () => {
   return (
     <>
       <motion.div
-        className="z-100 fixed inset-x-0 bottom-0 w-full items-center justify-center rounded-full p-7 sm:flex"
+        className="z-100 fixed inset-x-0 bottom-0 hidden w-full items-center justify-center rounded-full p-7 sm:flex"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="flex items-center justify-center rounded-full bg-[#14393D] p-1.5 backdrop-blur-md">
-          <div className="boder flex items-stretch p-2">
+          <div className="flex items-stretch p-2">
             <Link
               href="#hero"
               style={{
-                backgroundImage:
-                  "url(https://assets-global.website-files.com/5837424ae11409586f837994/624322b0c806026f5689d841_Group%2012569.svg)",
                 backgroundPosition: "50%",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "auto 22px",
                 paddingLeft: "25px",
                 paddingRight: "25px",
               }}
-              className="cursor-pointer rounded-full bg-zinc-800 p-2 pb-2 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
-            ></Link>
+              className="cursor-pointer rounded-full bg-zinc-800 p-2 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
+            >
+              <Image
+                src="https://assets-global.website-files.com/5837424ae11409586f837994/624322b0c806026f5689d841_Group%2012569.svg"
+                alt="icon"
+                width={16}
+                height={16}
+              />
+            </Link>
             <Link
-              href="/auth/"
+              href="/survey"
               className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               Survey
             </Link>
             <Link
-              href="/auth/"
+              href="#about"
               className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               About
@@ -63,29 +69,30 @@ const FloatingNavbar = () => {
           </div>
         </div>
       </motion.div>
-
       <motion.div
-        className="sm:hidden z-100 fixed bottom-5 right-5"
+        className="fixed bottom-5 right-5 z-50 sm:hidden"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        <div className="rounded-full bg-blue-500 p-4 shadow-lg cursor-pointer">
-          <Image src="hmicon.png"
-            alt="icon"
-          />
+        <div className="cursor-pointer rounded-full bg-blue-500 p-4 shadow-lg">
+          <Image src="/hmicon.png" alt="icon" layout="fill" objectFit="cover" />
         </div>
       </motion.div>
+      <div
+        className="menu-button-cover"
+        onClick={() => setIsMenuOpen(false)}
+      ></div>
       {isMenuOpen && (
         <motion.div
-          className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-end sm:hidden"
+          className="fixed inset-0 flex items-end bg-black/30 backdrop-blur-sm sm:hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full flex flex-col items-center justify-center bg-white rounded-t-lg p-4">
-            <div className="boder flex items-stretch p-2">
+          <div className="flex w-full flex-col items-center justify-center rounded-t-lg bg-white p-4">
+            <div className="flex items-stretch p-2">
               <Link
                 href="#hero"
                 style={{
@@ -97,7 +104,7 @@ const FloatingNavbar = () => {
                   paddingLeft: "25px",
                   paddingRight: "25px",
                 }}
-                className="cursor-pointer rounded-full bg-zinc-800 p-2 pb-2 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
+                className="cursor-pointer rounded-full bg-zinc-800 p-2 font-bold text-white transition-colors duration-200 hover:bg-white hover:text-black"
               ></Link>
               <Link
                 href="/auth/"
@@ -132,10 +139,10 @@ const FloatingNavbar = () => {
             </div>
           </div>
         </motion.div>
-      )};
-
-      );
+      )}
+      ;
     </>
+  );
 };
 
 export default FloatingNavbar;
