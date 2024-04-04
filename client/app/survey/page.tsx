@@ -2,7 +2,7 @@ import Script from "next/script";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "@024 hello_miami Engineers Survey",
+  title: "hello_miami Engineers Survey",
   description: "Miami's Engineering Community",
 };
 
