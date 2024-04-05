@@ -17,7 +17,7 @@ export default function HomePage() {
           muted
           playsInline
           className="absolute left-0 top-0 z-0 h-full w-full object-cover"
-          src="/background.mp4"
+          src="/background_video.mp4"
         />
         <div className="absolute inset-x-0 bottom-0 pb-40">
           <PartnerTicker />
