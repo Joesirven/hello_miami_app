@@ -3,8 +3,8 @@ import PartnerTicker from "@/components/partner-ticker";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Authentication",
-  description: "Authentication forms built using the components.",
+  title: "<Hello_miami />",
+  description: "miami's engineering community",
 };
 
 export default function HomePage() {
@@ -23,9 +23,7 @@ export default function HomePage() {
           <PartnerTicker />
         </div>
       </div>
-      <div className="h-[calc(2500px-100vh)] overflow-y-auto">
-        <GradientBackground />
-      </div>
+      <div className="h-[calc(2500px-100vh)] overflow-y-auto"></div>
     </>
   );
 }
