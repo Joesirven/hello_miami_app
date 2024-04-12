@@ -32,8 +32,8 @@ const FloatingNavbar = () => {
               <Image
                 src="https://assets-global.website-files.com/5837424ae11409586f837994/624322b0c806026f5689d841_Group%2012569.svg"
                 alt="icon"
-                width={16}
-                height={16}
+                width={12}
+                height={12}
               />
             </Link>
             <Link
