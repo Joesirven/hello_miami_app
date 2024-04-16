@@ -37,7 +37,7 @@ const FloatingNavbar = () => {
               />
             </Link>
             <Link
-              href="/survey"
+              href="/census"
               className="rounded-full p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               Census
