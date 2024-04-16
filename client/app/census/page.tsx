@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Miami's Engineering Community",
 };
 
-function SurveyPage() {
+function CensusPage() {
   return (
     <div>
       <div data-tf-live="01HTBV8V6EPW3VFPX06KH1WH8P"></div>
@@ -15,4 +15,4 @@ function SurveyPage() {
   );
 }
 
-export default SurveyPage;
+export default CensusPage;
