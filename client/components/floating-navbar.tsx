@@ -38,31 +38,31 @@ const FloatingNavbar = () => {
             </Link>
             <Link
               href="/survey"
-              className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
+              className="rounded-full p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
-              Survey
+              Census
             </Link>
             <Link
               href="#about"
-              className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
+              className="rounded-full p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               About
             </Link>
             <Link
               href="https://lu.ma/hello_miami"
-              className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
+              className="rounded-full p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               Calendar
             </Link>
             <Link
               href="/auth/"
-              className="rounded-full p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
+              className="rounded-full p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               Join
             </Link>
             <Link
               href="/auth/login"
-              className="rounded-full bg-zinc-800 p-2 font-bold text-white transition-colors hover:bg-white hover:text-black"
+              className="rounded-full bg-zinc-800 p-3 font-bold text-white transition-colors hover:bg-white hover:text-black"
             >
               Login
             </Link>
