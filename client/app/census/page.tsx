@@ -4,6 +4,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "hello_miami Engineers Survey",
   description: "Miami's Engineering Community",
+  openGraph: {
+    images: [
+      "https://storage.googleapis.com/hello-miami-app/twitter-image.png",
+    ],
+  },
 };
 
 function CensusPage() {
