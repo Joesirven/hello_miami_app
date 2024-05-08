@@ -25,12 +25,12 @@ app.add_middleware(
 app.include_router(users.router)
 
 app.include_router(users.router)
-app.include_router(plans.router)
-app.include_router(savings.router)
-app.include_router(transactions.router)
-app.include_router(journals.router)
-app.include_router(expenses.router)
-app.include_router(expenses_type_vo.router)
+# app.include_router(plans.router)
+# app.include_router(savings.router)
+# app.include_router(transactions.router)
+# app.include_router(journals.router)
+# app.include_router(expenses.router)
+# app.include_router(expenses_type_vo.router)
 
 
 
