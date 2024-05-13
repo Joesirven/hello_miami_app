@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@styles/globals.css";
-import FloatingNavbar from "@/components/floating-navbar";
 import { CSPostHogProvider } from "./providers";
 import posthog from "posthog-js";
 
@@ -11,6 +10,12 @@ export const metadata: Metadata = {
   title: "<hello_Miami />",
   description: "Miami's engineering community",
 };
+
+import dynamic from "next/dynamic";
+
+const FloatingNavbar = dynamic(() => import("@/components/floating-navbar"), {
+  ssr: false,
+});
 
 export default function RootLayout({
   children,
