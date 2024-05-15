@@ -1,6 +1,7 @@
 import PartnerTicker from "@/components/partner-ticker";
 import { Metadata } from "next";
 import FloatingNavbar from "@/components/floating-navbar";
+import GradientBackground from "@/components/gradient-background";
 
 export const metadata: Metadata = {
   title: "<Hello_miami />",
@@ -25,7 +26,9 @@ export default function HomePage() {
           <FloatingNavbar />
         </div>
       </div>
-      <div className="h-[calc(2500px-100vh)] overflow-y-auto"></div>
+      <div className="h-[calc(2500px-100vh)] overflow-y-auto">
+        <GradientBackground />
+      </div>
     </>
   );
 }

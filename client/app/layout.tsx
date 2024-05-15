@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CSPostHogProvider>
-        <FloatingNavbar />
         <body className={inter.className}>{children}</body>
       </CSPostHogProvider>
     </html>
