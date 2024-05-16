@@ -74,16 +74,16 @@ const CensusPage = async () => {
             A project by
           </div>
           <div className="flex justify-center items-center gap-4 md:gap-16 mt-10 mb-24">
-            <div className="w-16">
+            <div className="md:w-16 w-10">
               <GreenLogo />
             </div>
-            <div className="w-56">
+            <div className="md:w-56 w-44">
               <VentureMiamiLogo />
             </div>
-            <div className="w-44">
+            <div className="md:w-44 w-32">
               <DDALogo />
             </div>
-            <div className="w-20">
+            <div className="md:w-20 w-12">
               <INITLogo />
             </div>
           </div>
