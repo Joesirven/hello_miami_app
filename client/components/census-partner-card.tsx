@@ -3,9 +3,9 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button"; // Import the Button component from shadcn/ui
 
 const partnerLogos = [
-  { src: "/LULA.svg", alt: "LULA" },
-  { src: "/path/to/logo2.png", alt: "Partner 2" },
-  { src: "/path/to/logo3.png", alt: "Partner 3" },
+  // { src: "/LULA.svg", alt: "LULA" },
+  // { src: "/path/to/logo2.png", alt: "Partner 2" },
+  // { src: "/path/to/logo3.png", alt: "Partner 3" },
 ];
 
 function CensusPartnerCard() {

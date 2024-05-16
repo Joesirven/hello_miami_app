@@ -19,7 +19,26 @@ export const metadata: Metadata = {
   },
 };
 
-function CensusPage() {
+type ResponseData = {
+  count: number;
+};
+
+async function fetchResponseCount(): Promise<number> {
+  try {
+    const res = await fetch(
+      `http://${process.env.NEXT_PUBLIC_URL}/api/censusResponse`,
+    );
+    const result: ResponseData = await res.json();
+    return result.count;
+  } catch (error) {
+    console.error("Error fetching response count:", error);
+    return 0;
+  }
+}
+
+const CensusPage = async () => {
+  const responseCount = await fetchResponseCount();
+
   return (
     <>
       <div className="relative min-h-screen flex flex-col items-center justify-center text-white text-center">
@@ -42,8 +61,10 @@ function CensusPage() {
                 <p className="text-2xl">(7 mins)</p>
               </Link>
             </Button>
-            <div className="text-white text-4xl mt-5">
-              <p>300 more responses needed</p>
+
+            <div className="flex text-white text-5xl mt-5">
+              <p className="text-lime-200">{370 - responseCount}</p>
+              <p className="ml-2">more responses needed</p>
             </div>
           </div>
           <div className="mt-24 text-lime-200 text-[52.85px] font-normal font-['Px Grotesk'] leading-[105.70px]">
@@ -53,26 +74,28 @@ function CensusPage() {
           <div className="mt-24 text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
-          <div className="flex justify-center items-center gap-24 mt-10 mb-24">
-            <div className="w-24">
-              {" "}
+          <div className="flex justify-center items-center gap-16 mt-10 mb-24">
+            <div className="w-16">
               <GreenLogo />
             </div>
-            <div className="w-64">
-              {" "}
+            <div className="w-44">
               <VentureMiamiLogo />
             </div>
-            <DDALogo />
-            <INITLogo />
+            <div className="w-44">
+              <DDALogo />
+            </div>
+            <div className="w-20">
+              <INITLogo />
+            </div>
           </div>
 
-          <div className="min-h-64 w-full max-w-5xl mx-auto mt-8">
+          <div className="min-h-64 w-full max-w-5xl mx-auto mt-2">
             <CensusPartnerCard />
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
 export default CensusPage;
