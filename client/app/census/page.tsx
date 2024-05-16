@@ -66,7 +66,7 @@ const CensusPage = async () => {
               <p className="ml-2">more responses needed</p>
             </div>
           </div>
-          <div className="my-20 text-lime-200 text-6xl md:text-2xl sm:text-2xl font-['Px Grotesk'] leading-[105.70px]">
+          <div className="my-20 text-lime-200 text-2xl md:text-5xl font-['Px Grotesk'] leading-[105.70px]">
             every engineer counts
           </div>
 
@@ -74,16 +74,16 @@ const CensusPage = async () => {
             A project by
           </div>
           <div className="flex justify-center items-center gap-8 mt-10 mb-24 w-full max-w-5xl mx-auto">
-            <div className="flex-grow">
+            <div className="flex-grow flex justify-center items-center">
               <GreenLogo />
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow flex justify-center items-center">
               <VentureMiamiLogo />
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow flex justify-center items-center">
               <DDALogo />
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow flex justify-center items-center">
               <INITLogo />
             </div>
           </div>
