@@ -32,7 +32,7 @@ function CensusPage() {
           <div className="w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
             <CensusLogo />
           </div>
-          <div className="mt-6">
+          <div className="mt-10">
             <Button asChild variant="green" size="xl">
               <Link
                 href="/census/census"
@@ -42,14 +42,18 @@ function CensusPage() {
                 <p className="text-2xl">(7 mins)</p>
               </Link>
             </Button>
+            <div className="text-white text-4xl mt-5">
+              <p>300 more responses needed</p>
+            </div>
           </div>
-          <div className="mt-4 text-lime-200 text-[52.85px] font-normal font-['Px Grotesk'] leading-[105.70px]">
+          <div className="mt-24 text-lime-200 text-[52.85px] font-normal font-['Px Grotesk'] leading-[105.70px]">
             every engineer counts
           </div>
-          <div className="mt-2 text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
+
+          <div className="mt-24 text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
-          <div className="flex justify-center items-center gap-24 mt-4">
+          <div className="flex justify-center items-center gap-24 mt-10 mb-24">
             <div className="w-24">
               {" "}
               <GreenLogo />
@@ -61,9 +65,7 @@ function CensusPage() {
             <DDALogo />
             <INITLogo />
           </div>
-          <div className="text-white mt-4">
-            <p>300 more responses needed</p>
-          </div>
+
           <div className="min-h-64 w-full max-w-5xl mx-auto mt-8">
             <CensusPartnerCard />
           </div>
