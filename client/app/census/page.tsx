@@ -45,42 +45,39 @@ const CensusPage = async () => {
         <GradientBackground />
 
         <div className="relative z-10 w-full flex flex-col items-center">
-          <div className="text-white text-[27.87px] font-normal font-['Px Grotesk'] leading-snug">
-            the 2024
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 mx-auto">
+          <div className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 mx-auto mt-28">
             <CensusLogo />
           </div>
-          <div className="mt-10">
-            <div className="bg-white/10 rounded-3xl backdrop-blur-lg flex flex-col items-center p-10">
+          <div className="mt-2">
+            <div className="bg-white/10 rounded-2xl backdrop-blur-lg flex flex-col items-center p-5">
               <Button asChild variant="green" size="xl">
                 <Link
                   href="/census/census"
                   className="flex-col place-items-center gap-2"
                 >
                   <p className="text-4xl mt-2">👉Take it rn</p>
-                  <p className="text-2xl">(7 mins)</p>
+                  <p className="text-lg">(7 mins)</p>
                 </Link>
               </Button>
             </div>
 
-            <div className="flex text-white text-5xl mt-5">
+            <div className="flex justify-center text-white text-4xl mt-3">
               <p className="text-lime-200">{370 - responseCount}</p>
               <p className="ml-2">more responses needed</p>
             </div>
           </div>
-          <div className="mt-24 text-lime-200 text-[52.85px] font-normal font-['Px Grotesk'] leading-[105.70px]">
+          <div className="my-20 text-lime-200 text-6xl font-['Px Grotesk'] leading-[105.70px]">
             every engineer counts
           </div>
 
-          <div className="mt-24 text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
+          <div className="text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
           <div className="flex justify-center items-center gap-16 mt-10 mb-24">
             <div className="w-16">
               <GreenLogo />
             </div>
-            <div className="w-44">
+            <div className="w-36">
               <VentureMiamiLogo />
             </div>
             <div className="w-44">

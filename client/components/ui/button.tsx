@@ -19,7 +19,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         green:
-          "bg-[#D0F6AE] px-10 b-white/opacity-10 rounded-[49.16px] backdrop-blur-[224.73px] rounded-2xl text-black shadow-lg hover:bg-[#D0F6AE]/80 hover:border-[0.5px] hover:border-zinc-500 hover:text-black",
+          "bg-[#D0F6AE] b-white/opacity-10 rounded-[49.16px] backdrop-blur-[224.73px] rounded-2xl text-black shadow-lg hover:bg-[#D0F6AE]/80 hover:border-[0.5px] hover:border-zinc-500 hover:text-black",
         dark_green:
           "border-[0.5px] border-zinc-500 bg-[#14393D] rounded-2xl text-lime-200 text-2xl shadow-md hover:bg-[#14393D]/50 hover:text-lime-300 ",
       },
@@ -27,7 +27,7 @@ const buttonVariants = cva(
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
-        xl: "h-[86.24px] w-[152.27px] px-10 rounded-2xl",
+        xl: "h-36 px-8 rounded-2xl",
         icon: "h-9 w-9",
       },
     },
