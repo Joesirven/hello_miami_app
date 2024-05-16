@@ -48,19 +48,21 @@ const CensusPage = async () => {
           <div className="text-white text-[27.87px] font-normal font-['Px Grotesk'] leading-snug">
             the 2024
           </div>
-          <div className="w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
+          <div className="w-full md:w-1/2 lg:w-1/3 mx-auto">
             <CensusLogo />
           </div>
           <div className="mt-10">
-            <Button asChild variant="green" size="xl">
-              <Link
-                href="/census/census"
-                className="flex-col place-items-center gap-2"
-              >
-                <p className="text-4xl mt-2">👉Take it rn</p>
-                <p className="text-2xl">(7 mins)</p>
-              </Link>
-            </Button>
+            <div className="bg-white/10 rounded-3xl backdrop-blur-lg flex flex-col items-center p-10">
+              <Button asChild variant="green" size="xl">
+                <Link
+                  href="/census/census"
+                  className="flex-col place-items-center gap-2"
+                >
+                  <p className="text-4xl mt-2">👉Take it rn</p>
+                  <p className="text-2xl">(7 mins)</p>
+                </Link>
+              </Button>
+            </div>
 
             <div className="flex text-white text-5xl mt-5">
               <p className="text-lime-200">{370 - responseCount}</p>

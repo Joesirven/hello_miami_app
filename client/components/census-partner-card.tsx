@@ -26,7 +26,7 @@ function CensusPartnerCard() {
       <div className="mt-4 md:mt-0 md:ml-4">
         <Button asChild variant="dark_green">
           <Link href="https://1zlrvuskgmr.typeform.com/to/f8D8DKvd">
-            <p className="text-lime-400 text-lg">Support or Partner </p>
+            <p>Support or Partner </p>
           </Link>
         </Button>
       </div>
