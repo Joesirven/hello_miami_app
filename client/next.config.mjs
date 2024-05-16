@@ -14,6 +14,11 @@ const nextConfig = {
         destination: "https://lu.ma/hello_miami",
         permanent: true,
       },
+      {
+        source: "/",
+        destination: "/census",
+        permanent: true,
+      },
     ];
   },
 };
