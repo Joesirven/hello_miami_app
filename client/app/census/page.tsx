@@ -41,7 +41,7 @@ const CensusPage = async () => {
 
   return (
     <>
-      <div className="relative min-h-screen flex flex-col items-center justify-center text-white text-center">
+      <div className="relative min-h-screen flex flex-col items-center justify-center text-white text-center overflow-x-hidden">
         <GradientBackground />
 
         <div className="relative z-10 w-full flex flex-col items-center">
@@ -66,28 +66,27 @@ const CensusPage = async () => {
               <p className="ml-2">more responses needed</p>
             </div>
           </div>
-          <div className="my-20 text-lime-200 text-2xl md:text-5xl font-['Px Grotesk'] leading-[105.70px]">
+          <div className="my-20 text-lime-200 text-6xl font-['Px Grotesk'] leading-[105.70px]">
             every engineer counts
           </div>
 
           <div className="text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
-          <div className="flex justify-center items-center gap-8 mt-10 mb-24 w-full max-w-5xl mx-auto">
-            <div className="flex-grow flex justify-center items-center">
+          <div className="flex justify-center items-center gap-16 mt-10 mb-24">
+            <div className="w-16">
               <GreenLogo />
             </div>
-            <div className="flex-grow flex justify-center items-center">
+            <div className="w-56">
               <VentureMiamiLogo />
             </div>
-            <div className="flex-grow flex justify-center items-center">
+            <div className="w-44">
               <DDALogo />
             </div>
-            <div className="flex-grow flex justify-center items-center">
+            <div className="w-20">
               <INITLogo />
             </div>
           </div>
-
           <div className="min-h-64 w-full max-w-5xl mx-auto mt-2">
             <CensusPartnerCard />
           </div>

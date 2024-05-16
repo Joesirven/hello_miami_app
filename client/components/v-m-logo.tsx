@@ -4,13 +4,13 @@ import { AspectRatio } from "./ui/aspect-ratio";
 function VentureMiamiLogo() {
   return (
     <Link href="https://venturemia.org/">
-      <AspectRatio ratio={1373 / 162}>
+      <AspectRatio ratio={1373 / 162} className="h-full w-full">
         <svg
           viewBox="0 0 3009 431"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          className="w-full h-auto"
+          className="h-full w-full"
         >
           <rect width="3009" height="431" fill="url(#pattern0_531_78)" />
           <defs>

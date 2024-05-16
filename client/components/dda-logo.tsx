@@ -4,12 +4,12 @@ import { AspectRatio } from "./ui/aspect-ratio";
 function DDALogo() {
   return (
     <Link href="https://www.miamidda.com/">
-      <AspectRatio ratio={130 / 32}>
+      <AspectRatio ratio={130 / 32} className="h-full w-auto">
         <svg
           viewBox="0 0 132 34"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto"
+          className="h-full w-auto"
         >
           <g clip-path="url(#clip0_291_131)">
             <path
