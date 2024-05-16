@@ -10,8 +10,8 @@ import INITLogo from "@/components/init-logo";
 import VentureMiamiLogo from "@/components/v-m-logo";
 
 export const metadata: Metadata = {
-  title: "hello_miami Engineers Survey",
-  description: "Miami's Engineering Community",
+  title: "2024 Miami Engineers Survey",
+  description: "measuring miami's builders",
   openGraph: {
     images: [
       "https://storage.googleapis.com/hello-miami-app/twitter-image.png",
