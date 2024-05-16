@@ -1,6 +1,11 @@
 function DDALogo() {
   return (
-    <svg viewBox="0 0 132 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      viewBox="0 0 132 34"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-auto"
+    >
       <g clip-path="url(#clip0_291_131)">
         <path
           d="M0.894531 24.0299H5.23769V8.13432L0.894531 12.4533V24.0299ZM13.8867 24.0299H17.1418V7.41998L13.8867 10.662V24.0299Z"

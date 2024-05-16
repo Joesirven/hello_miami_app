@@ -10,6 +10,7 @@ function GreenLogo() {
             viewBox="0 0 1396 957"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-full h-auto"
           >
             <g clip-path="url(#clip0_272_269)">
               <path
