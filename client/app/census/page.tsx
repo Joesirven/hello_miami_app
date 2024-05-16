@@ -7,6 +7,7 @@ import CensusPartnerCard from "@/components/census-partner-card"; // Import the 
 import GreenLogo from "@/components/hello-miami-green-logo";
 import DDALogo from "@/components/dda-logo";
 import INITLogo from "@/components/init-logo";
+import VentureMiamiLogo from "@/components/v-m-logo";
 
 export const metadata: Metadata = {
   title: "hello_miami Engineers Survey",
@@ -28,7 +29,9 @@ function CensusPage() {
           <div className="text-white text-[27.87px] font-normal font-['Px Grotesk'] leading-snug">
             the 2024
           </div>
-          <CensusLogo />
+          <div className="w-full flex justify-center">
+            <CensusLogo /> {/* Adjust the size */}
+          </div>
           <div className="mt-6">
             <Button asChild>
               <Link href="/census/census">
@@ -43,8 +46,15 @@ function CensusPage() {
           <div className="mt-2 text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
-          <div className="flex justify-center items-center gap-8 mt-4">
-            <GreenLogo />
+          <div className="flex justify-center items-center gap-24 mt-4">
+            <div className="w-24">
+              {" "}
+              <GreenLogo />
+            </div>
+            <div className="w-64">
+              {" "}
+              <VentureMiamiLogo />
+            </div>
             <DDALogo />
             <INITLogo />
           </div>
@@ -52,7 +62,7 @@ function CensusPage() {
             <p>300 more responses needed</p>
             <p>A project by Hello Miami and Miami DDA</p>
           </div>
-          <div className="min-h-64 min-w-2.5">
+          <div className="w-full flex justify-center mt-8">
             <CensusPartnerCard />
           </div>
         </div>
