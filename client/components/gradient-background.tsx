@@ -1,6 +1,6 @@
 export default function GradientBackground() {
   return (
-    <div className="w-[1225.80px] h-[2761.86px] relative z-0">
+    <div className="w-full h-full absolute z-0">
       <svg
         width="1440"
         height="1820"
