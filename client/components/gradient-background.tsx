@@ -2,6 +2,7 @@ export default function GradientBackground() {
   return (
     <div className="inset-0 overflow-hidden absolute z-0">
       <svg
+        className="w-ful h-full object-cover"
         viewBox="0 0 1440 1820"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
