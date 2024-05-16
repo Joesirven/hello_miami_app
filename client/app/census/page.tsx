@@ -80,7 +80,7 @@ const CensusPage = async () => {
             <div className="md:w-56 w-44">
               <VentureMiamiLogo />
             </div>
-            <div className="md:w-44 w-32">
+            <div className="md:w-44 w-28">
               <DDALogo />
             </div>
             <div className="md:w-20 w-12">
