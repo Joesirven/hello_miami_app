@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import CensusLogo from "@/components/census-logo";
 import { Button } from "@/components/ui/button";
-import CensusPartnerCard from "@/components/census-partner-card"; // Import the CensusPartnerCard component
+import CensusPartnerCard from "@/components/census-partner-card";
 import GreenLogo from "@/components/hello-miami-green-logo";
 import DDALogo from "@/components/dda-logo";
 import INITLogo from "@/components/init-logo";
@@ -29,14 +29,17 @@ function CensusPage() {
           <div className="text-white text-[27.87px] font-normal font-['Px Grotesk'] leading-snug">
             the 2024
           </div>
-          <div className="w-full flex justify-center">
-            <CensusLogo /> {/* Adjust the size */}
+          <div className="w-2/3 md:w-1/2 lg:w-1/3 mx-auto">
+            <CensusLogo />
           </div>
           <div className="mt-6">
-            <Button asChild>
-              <Link href="/census/census">
-                <p>👉 Take it rn</p>
-                <p>(7 mins)</p>
+            <Button asChild variant="green" size="xl">
+              <Link
+                href="/census/census"
+                className="flex-col place-items-center gap-2"
+              >
+                <p className="text-4xl mt-2">👉Take it rn</p>
+                <p className="text-2xl">(7 mins)</p>
               </Link>
             </Button>
           </div>
@@ -60,9 +63,8 @@ function CensusPage() {
           </div>
           <div className="text-white mt-4">
             <p>300 more responses needed</p>
-            <p>A project by Hello Miami and Miami DDA</p>
           </div>
-          <div className="w-full flex justify-center mt-8">
+          <div className="min-h-64 w-full max-w-5xl mx-auto mt-8">
             <CensusPartnerCard />
           </div>
         </div>
