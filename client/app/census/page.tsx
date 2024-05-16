@@ -66,14 +66,14 @@ const CensusPage = async () => {
               <p className="ml-2">more responses needed</p>
             </div>
           </div>
-          <div className="my-20 text-lime-200 text-6xl font-['Px Grotesk'] leading-[105.70px]">
+          <div className="my-20 text-lime-200 text-3xl md:text-4xl font-['Px Grotesk'] leading-[105.70px]">
             every engineer counts
           </div>
 
           <div className="text-white text-[15px] font-normal font-['Px Grotesk'] leading-3">
             A project by
           </div>
-          <div className="flex justify-center items-center gap-16 mt-10 mb-24">
+          <div className="flex justify-center items-center gap-4 md:gap-16 mt-10 mb-24">
             <div className="w-16">
               <GreenLogo />
             </div>
