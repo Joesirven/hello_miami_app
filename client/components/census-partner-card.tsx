@@ -15,7 +15,7 @@ const partnerLogos: Logo[] = [
 
 function CensusPartnerCard() {
   return (
-    <div className="w-full max-w-xl md:max-w-4xl mx-auto m-2 p-6  rounded-3xl backdrop-blur-lg flex flex-col items-center gap-4 md:flex-row md:justify-between">
+    <div className="w-full max-w-xl md:max-w-4xl mx-auto m-2 p-6 rounded-3xl backdrop-blur-lg flex flex-col items-center gap-4 md:flex-row md:justify-between">
       <div className="flex flex-wrap justify-center gap-4">
         {partnerLogos.map((logo, index) => (
           <div key={index} className="relative w-32 h-16 md:w-40 md:h-20">
