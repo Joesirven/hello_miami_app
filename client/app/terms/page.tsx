@@ -9,7 +9,7 @@ const TermsPage = () => {
         <title>Hello_Miami Community Web App Terms and Conditions</title>
         <meta
           name="description"
-          content="Hello_Miami Community Web App Terms and Conditions"
+          content="Hello_Miami Terms and Conditions"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -24,7 +24,7 @@ const TermsPage = () => {
           an online platform designed to foster community engagement and
           connection among Miami residents and visitors. By accessing or using
           Hello_Miami, you agree to comply with and be bound by the following
-          terms and conditions ( &quot;Terms&quot;). Please review these Terms
+          terms and conditions (&quot;Terms&quot;). Please review these Terms
           carefully before using Hello_Miami.
         </p>
 
@@ -188,19 +188,21 @@ const TermsPage = () => {
           Hello_Miami&apos;s prior written consent, and any unauthorized
           assignment and delegation by you is void.
         </p>
+        <h2>16. Text Messaging Consent</h2>
+    <p>
+      a. By providing your phone number, you consent to receive text messages from Hello_Miami regarding your interest in our hacker campus. These messages may include updates, promotional offers, and other information related to our services. b. You may receive periodic messages from us. Message frequency will vary based on your engagement and the information we need to share with you. c. You can opt-out of receiving text messages at any time by replying with &quot;STOP&quot; to any text message you receive from us. You may also contact us at [support email] to be removed from our text message list. d. Standard message and data rates may apply to any messages you receive from us, as determined by your mobile service provider.
+    </p>
 
-        <h2>16. Contact Us</h2>
-        <p>
-          If you have any questions about these Terms, please contact us at
-          [contact email address]. By accessing or using Hello_Miami, you
-          acknowledge that you have read, understood, and agree to be bound by
-          these Terms and all applicable laws and regulations. If you do not
-          agree with these Terms, you may not use Hello_Miami. Last updated:
-          March 28, 2024
-        </p>
-      </div>
-    </div>
-  );
+    <h2>17. Contact Us</h2>
+    <p>
+      If you have any questions about these Terms, please contact us at
+      [contact email address]. By accessing or using Hello_Miami, you
+      acknowledge that you have read, understood, and agree to be bound by
+      these Terms and all applicable laws and regulations. If you do not
+      agree with these Terms, you may not use Hello_Miami. Last updated:
+      March 28, 2024
+    </p>
+  </div>
+</div>
+);
 };
-
-export default TermsPage;
